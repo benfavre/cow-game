@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cow Launch Game</title>
+  <link rel="icon" href="/cow-icon.svg" type="image/svg+xml">
+  
+  <!-- Load fonts -->
+  <style>
+    /* Font declarations with fallbacks */
+    @font-face {
+      font-family: 'Luckiest Guy';
+      src: url('/fonts/LuckiestGuy-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap; /* Show fallback font until custom font loads */
+    }
+    
+    @font-face {
+      font-family: 'Nunito';
+      src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Bangers';
+      src: url('/fonts/Bangers-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    /* Base styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    #root {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Text styles with fallback fonts */
+    h1, h2, h3, h4 {
+      font-family: 'Luckiest Guy', 'Impact', 'Arial Black', sans-serif;
+    }
+    
+    body, p, button {
+      font-family: 'Nunito', 'Arial', sans-serif;
+    }
+    
+    .special-text {
+      font-family: 'Bangers', 'Comic Sans MS', cursive;
+    }
+    
+    #loading {
+      font-family: 'Nunito', 'Arial', sans-serif;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+    }
+    
+    .spinner {
+      width: 40px;
+      height: 40px;
+      margin: 20px auto;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      border-top-color: white;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="loading">
+      <h1>Loading Cow Launch Game...</h1>
+      <div class="spinner"></div>
+      <p>Prepare for an udder-ly amazing adventure!</p>
+    </div>
+  </div>
+  
+  <script type="module" src="/src/index.tsx"></script>
+</body>
+</html> 

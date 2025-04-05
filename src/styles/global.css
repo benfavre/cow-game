@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #FF6B6B;
+  --primary-light: #FF8E8E;
+  --primary-dark: #FF3B3B;
+  --secondary-color: #4ECDC4;
+  --secondary-light: #7EDDD6;
+  --secondary-dark: #2EBDB4;
+  --background-main: #F7F7F7;
+  --background-dark: #E0E0E0;
+  --background-light: #FFFFFF;
+  --success-color: #6BCB77;
+  --warning-color: #FFD93D;
+  --danger-color: #FF6B6B;
+  --info-color: #4D96FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Nunito', Arial, sans-serif;
+  background-color: var(--background-main);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Font declarations with fallbacks */
+@font-face {
+  font-family: 'Luckiest Guy';
+  src: url('/fonts/LuckiestGuy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Show fallback font until custom font loads */
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bangers';
+  src: url('/fonts/Bangers-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Luckiest Guy', 'Impact', 'Arial Black', cursive;
+  color: var(--primary-dark);
+}
+
+p, button, input, textarea {
+  font-family: 'Nunito', Arial, sans-serif;
+}
+
+.bangers-font {
+  font-family: 'Bangers', 'Comic Sans MS', cursive;
+}
+
+/* UI components */
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--primary-dark);
+}
+
+.button.secondary {
+  background-color: var(--secondary-color);
+}
+
+.button.secondary:hover {
+  background-color: var(--secondary-dark);
+}
+
+/* Game UI elements */
+.power-meter {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.angle-indicator {
+  stroke: white;
+  stroke-width: 2px;
+} 
