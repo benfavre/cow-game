@@ -1,0 +1,70 @@
+{
+  "design_profile": {
+    "style": {
+      "type": "2D cartoon",
+      "characteristics": ["bold outlines", "simple shapes", "expressive"],
+      "tone": "whimsical, humorous, light-hearted"
+    },
+    "color_palette": {
+      "primary": ["sky blue", "pasture green", "sunny yellow"],
+      "accent": ["bubblegum pink", "creamy white", "mud brown"],
+      "weather_variations": {
+        "rain": "light blue overlay",
+        "snow": "white overlay",
+        "thunder": "yellow-orange overlay"
+      }
+    },
+    "character_design": {
+      "main_cow": {
+        "features": ["big goofy eyes", "flappy tongue", "expressive animations"],
+        "animations": ["happy", "dizzy", "shocked"],
+        "accessories": ["wings", "capes", "helmets"]
+      },
+      "background_characters": ["birds", "squirrels", "sheep"]
+    },
+    "environment": {
+      "landscape": {
+        "ground": ["rolling green hills", "barns", "fences", "flowers"],
+        "sky": ["dynamic layers", "clouds", "sun", "stars"],
+        "trampolines": ["vibrant colors", "spring animations"]
+      },
+      "weather_effects": {
+        "wind": "visual gusts with particle effects",
+        "rain": "animated droplets and splash effects",
+        "snow": "soft falling flakes",
+        "thunder": "flash overlays and screen shake"
+      }
+    },
+    "ui_elements": {
+      "hud": {
+        "power_meter": "bright meter bar with cow face indicator",
+        "angle_indicator": "simple arc with arrow",
+        "score_tracker": "bubble-letter numbers",
+        "power_up_icons": "active buffs with time remaining"
+      },
+      "menus": {
+        "main_menu": {
+          "buttons": ["hay bales", "barns", "road signs"],
+          "launch_button": "bouncing cow animation"
+        },
+        "pause_menu": {
+          "style": "sketchbook/chalkboard",
+          "icons": ["resume", "restart", "settings"]
+        }
+      }
+    },
+    "animations": {
+      "cow": {
+        "idle": ["blinks", "wobbles", "shifts weight"],
+        "launch": ["stretch-squash", "mid-air spinning/flipping"],
+        "landing": ["bounces", "splats", "slides"],
+        "tricks": ["trail effects", "stars", "rainbows"]
+      },
+      "power_ups": {
+        "wings": "flapping feather burst",
+        "magnet": "metal sparkle and item vacuum lines",
+        "time_slow": "clock icon with warpy screen blur"
+      }
+    }
+  }
+}
